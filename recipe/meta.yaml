@@ -1,5 +1,5 @@
 {% set name = "biobuddy" %}
-{% set version = "0.1.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e6b0eb3280e872d56945ec986ef7b468f53f4b1b1124c5f899f6fd493e22f30
+  sha256: e5701b139cc02e10237f21d95265777dc6a23e08496eac99aaa0bce8e0e3e9fb
 
 build:
   noarch: python
