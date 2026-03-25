@@ -1,5 +1,5 @@
 {% set name = "biobuddy" %}
-{% set version = "0.1.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e6b0eb3280e872d56945ec986ef7b468f53f4b1b1124c5f899f6fd493e22f30
+  sha256: 132d8866f19f3783f137fdd441a813d3716e021bd2bda95e54d8721449add5ef
 
 build:
   noarch: python
@@ -27,6 +27,8 @@ requirements:
     - ezc3d
     - lxml
     - scipy
+    - pandas
+    - graphviz
 test:
   imports:
     - biobuddy
