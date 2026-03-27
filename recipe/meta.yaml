@@ -29,6 +29,7 @@ requirements:
     - scipy
     - pandas
     - graphviz
+    - matplotlib
 test:
   imports:
     - biobuddy
